@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+}
+
+.font-arcade {
+  font-family: 'Bungee', cursive, system-ui, sans-serif;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-6px, 4px) rotate(-2deg); }
+  40% { transform: translate(6px, -4px) rotate(2deg); }
+  60% { transform: translate(-4px, -2px) rotate(-1deg); }
+  80% { transform: translate(4px, 2px) rotate(1deg); }
+}
+
+.animate-game-shake {
+  animation: shake 0.35s ease-in-out;
+}
+
+@keyframes chew {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08) translateY(-4px); }
+}
+
+.animate-chew {
+  animation: chew 0.25s ease-in-out 3;
+}
+
+@keyframes float-up {
+  0% { opacity: 1; transform: translateY(0px) scale(0.9); }
+  50% { transform: translateY(-25px) scale(1.15); }
+  100% { opacity: 0; transform: translateY(-50px) scale(1); }
+}
+
+.animate-float-up {
+  animation: float-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

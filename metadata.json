@@ -1,0 +1,6 @@
+{
+  "name": "GARRI OR DIE!",
+  "description": "A fast-paced, hilarious 3D Nigerian survival arcade game. Deliver spoonfuls of soaked garri before hunger knocks you out!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
